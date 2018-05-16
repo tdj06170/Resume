@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> RWD </title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, inital-scale=1.0">
+ <!-- based on this width variable you will have different layouts-->
+<style>
+*{box-sizing:border-box;} /* we dont have to think about border and padding */
+img{
+	width:60%;
+	height:auto;
+}
+.col-1{width:8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} 
+[class*="col-"]{
+	float:left;
+	padding:30px;
+	border:1px solid white;
+}
+/* 4) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+} 
+.aside {
+    padding: 7px;
+    text-align: center;
+    font-size: 70px;
+}
+    .footer {
+    text-align: left;
+    font-size: 30px;
+    padding: 15px;
+}
+</style>
+</head>
+<body style="background-color:orange">
+	<div class="aside">
+<div class="col-12"> Resume </div>
+	</div>
+<div class="footer">	
+<div class="col-12"> Name:정재필 </div>
+</div> 
+<div class="footer">
+	<div class="col-3"><img src="photo.jpg" alt="photo"> </div> 
+	<div class="col-9"> My hobby: Computer game,
+	Soccer, 
+	Watch movie </div> 
+	
+</div>
+<div class="footer">
+	<div class="col-12"> My family:
+	Father mother Me Sister</div>
+</div>
+
+</body>
+</html>
